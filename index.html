@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coffee Rustic - Company Profile</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" sizes="192x192" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" sizes="512x512" href="icons/icon-512.png">
+  <meta name="theme-color" content="#8B5E3C">
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">☕ Coffee Rustic</div>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#about">Tentang</a>
+      <a href="#contact">Kontak</a>
+    </nav>
+    <div class="menu-toggle" id="menuToggle">☰</div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero" style="background-image:url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1600&q=80');">
+    <h1>Selamat Datang di Coffee Rustic</h1>
+    <p>Rasakan cita rasa kopi terbaik dengan suasana rustic yang hangat.</p>
+  </section>
+
+  <!-- Menu -->
+  <section id="menu" class="menu-section">
+    <h2>Menu Favorit Kami</h2>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80" alt="Latte">
+        <h3>Caffe Latte</h3>
+        <p>Rp 28.000</p>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?auto=format&fit=crop&w=800&q=80" alt="Espresso">
+        <h3>Espresso</h3>
+        <p>Rp 22.000</p>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80" alt="Cappuccino">
+        <h3>Cappuccino</h3>
+        <p>Rp 30.000</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about-section">
+    <h2>Tentang Kami</h2>
+    <p>Coffee Rustic adalah kedai kopi dengan nuansa hangat, menyajikan kopi premium dari biji pilihan.</p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact-section">
+    <h2>Kontak Kami</h2>
+    <p>Email: coffeerustic@gmail.com</p>
+    <p>Instagram: @coffeerustic</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Coffee Rustic</p>
+  </footer>
+
+  <!-- Register Service Worker -->
+  <script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("service-worker.js")
+      .then(() => console.log("Service Worker registered"));
+  }
+  </script>
+</body>
+</html>
